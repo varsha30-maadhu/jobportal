@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <label>name</label>
+    <input type="text" name="name">
+    <label>email</label>
+    <input type="email" name="email">
+
+    <label>image</label>
+    <input type="file" name="image">
+    <label>password</label>
+    <input type="password" name="password">
+    <label>confirm password</label>
+    <input type="password" name="cpass">
+    <input type="submit">
+</form>
+</body>
+</html>

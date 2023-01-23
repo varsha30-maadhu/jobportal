@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/0d4230aee3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" style="width: 100% ;">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+   <div class="container" align="center" style="margin-top:185px ;">
+
+    <h2 style="color: white;">Login</h2>
+    <form>
+        <label style="margin-right: 400px;">Username</label>
+        <div class="input-group mt-2 " style="width: 500px;">
+            <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <label style="margin-right: 400px;">password</label>
+        <div class="input-group mt-2 " style="width:500px">
+            <span class="input-group-text "><i class="fa-solid fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="password">
+        </div><br>
+        <p style="color: blue;">forget password ?</p><br><p style="color: blue;">create an account</p>
+
+         <button type="submit" class="btn btn mt-5" style="width: 100px;background-color: background-color: #21D4FD;
+         background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+         ;">Login</button>
+    </form>
+   </div>
+{% include 'footer.html' %}
+
+</body>
+</html>
