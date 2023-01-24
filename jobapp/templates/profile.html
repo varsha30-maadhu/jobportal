@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+     <script src="https://kit.fontawesome.com/b7e3f22cf6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hero-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <script src="https://kit.fontawesome.com/b7e3f22cf6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hero-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrap">
+    <header id="header">
+        <div class="container-fluid"  style="background-color:	  #333333">
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="primary-nav-button" type="button">Menu</button>
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="{% static 'img/logo.png' %}" alt="Venue Logo">
+                        </div>
+                    </a>
+                    <nav id="primary-nav" class="dropdown cf">
+                        <ul class="dropdown menu">
+                            <li class='active'><a href="http://127.0.0.1:8000/jobapp/index/"  style="color:white">Home</a></li>
+
+                            <li><a href="http://127.0.0.1:8000/jobapp/contacts/"  style="color:white">Contact Us</a></li>
+
+                            <li>
+                                <a href="#" style="color:white">About</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:8000/jobapp/about/">About Us</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="terms.html">Terms</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="http://127.0.0.1:8000/jobapp/logout/"  style="color:white">Logout</a></li>
+
+                            <li>
+                                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-bars" ></i>
+                                </button>
+
+                                <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasRight"
+                                     aria-labelledby="offcanvasRightLabel" style="background-color:black">
+                                    <div class="offcanvas-header" style="background-color:black">
+
+                                        <img src="{% static 'iPleaders-12.jpg' %}" width="100%" height="200px" style="display:block;">
+
+
+
+                                        <button type="button" class="btn-close text-reset btn-light" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body" style="background-color:black;color:white">
+                                        <h1>{{cmp}}</h1>
+                                        <ul >
+                                            <li><a href="http://127.0.0.1:8000/jobapp/index/" style="color:white" ><i class="fa-solid fa-house" style="color:white"></i>  Home</a></li><br>
+                                            <li><a href="" style="color:white"><i class="fa-sharp fa-solid fa-building"></i>  About Company</a> </li><br>
+                                            <li><a href="" style="color:white"><i class="fa-solid fa-user-pen"></i>         Edit Profile</a> </li><br>
+                                            <li><a href="http://127.0.0.1:8000/jobapp/logout/" style="color:white"><i class="fa-solid fa-arrow-right-from-bracket"></i>     Logout</a> </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav><!-- / #primary-nav -->
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+ <div class="carousel slide" id="c" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item">
+                    <!-- <div class="row">
+                        <div class="col-12"> -->
+                            <img src="https://miro.medium.com/max/5670/1*BlCQ1M5dYXN4yJgAFgaYTw.jpeg" class="d-block" style="width: 100%;">
+                        <!-- </div>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <!-- <div class="row">
+                        <div class="col-12"> -->
+                            <img src="https://i1.wp.com/crestperformance.com.au/wp-content/uploads/2016/06/2135699-corporate-wallpaper.jpg" class="d-block" style="width: 100%;height:580px">
+                        <!-- </div>
+                    </div> -->
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://th.bing.com/th/id/OIP.FCkaUIBT8ZOy4b_02_kW0wHaE8?pid=ImgDet&w=1536&h=1024&rs=1" class="d-block" style="width: 100%;height:580px">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#c" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+
+            </div>
+
+<div class="container-fluid" style="background-color:black;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="text-align:center"><a href="http://127.0.0.1:8000/jobapp/addjob/{{id}}" class="btn btn-warning mt-3 btn-5" style="font-size:25px;width:300px">Upload Vaccancies</a> </h1><br><br><br>
+              <h1 style="text-align:center"><a href="#" class="btn btn-warning" style="font-size:25px;width:300px">View Applied Users</a> </h1><br><br><br>
+              <h1 style="text-align:center"><a href="http://127.0.0.1:8000/jobapp/comdis/" class="btn btn-warning mb-5" style="font-size:25px;width:300px">View Companies</a> </h1><br>
+              <h1 style="text-align:center"><a href="http://127.0.0.1:8000/jobapp/vacancydis/" class="btn btn-warning mb-5" style="font-size:25px;width:300px">Posted Jobs</a> </h1>
+
+        </div>
+    </div>
+</div>
+
+
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+{% include 'navbar.html' %}
+ <h1 align="center" style="color:white">ADD VACCANCIES</h1>
+    <div class="container">
+        <form method="post">{% csrf_token %}
+
+            <label style="font-size:15px;margin-top:20px">Company Name</label>
+            <div class="input-group mt-4 " >
+                <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="company name" value="{{a.cname}}" name="cname"  required readonly>
+            </div>
+              <label style="font-size:15px;margin-top:20px">Email</label>
+            <div class="input-group mt-4 " >
+                <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
+                <input type="email" class="form-control" placeholder="Email" name="email" value="{{a.email}}"  required readonly>
+            </div>
+             <label style="font-size:15px;margin-top:20px">Job Title</label>
+            <div class="input-group mt-4 " >
+                <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Job title" name="title" value="{{a.title}}" required>
+            </div>
+
+
+            <label style="font-size:15px;margin-top:20px">Job Type</label>
+            <div class="input-group mt-4 ">
+                <span class="input-group-text "><i class="fa-solid fa-bars"></i></span>
+                <select class="form-select" name="jtype" style="height:40px" value="{{a.jtype}}" required>
+                    <option>{{a.jtype}}</option>
+                    <option value="parttime">parttime</option>
+                    <option value="Full-time">Full-time</option>
+
+
+                </select>
+            </div>
+            <label style="font-size:15px;margin-top:20px">Work type</label>
+            <div class="input-group mt-4 " >
+                <span class="input-group-text "><i class="fa-solid fa-bars"></i></span>
+                <select class="form-select" name="worktype" style="height:40px" value="{{a.worktype}}" required>
+                    <option>{{a.worktype}}</option>
+                    <option value="hybrid">hybrid</option>
+                    <option value="remote">remote</option>
+
+
+                </select>
+
+            </div>
+            <label style="font-size:15px;margin-top:20px">Experience required</label>
+            <div class="input-group mt-4 " >
+                <span class="input-group-text "><i class="fa-solid fa-bars"></i></span>
+                <select class="form-select" name="exp" style="height:40px"   required>
+                    <option>{{a.exp}}</option>
+                    <option value="0-1">0-1</option>
+                    <option value="1-2">1-2</option>
+                    <option value="2-3">2-3</option>
+                    <option value="3-4">3-4</option>
+                    <option value="4-5">4-5</option>
+                    <option value="5-6">5-6</option>
+                    <option value="6-7">6-7</option>
+                    <option value="7-8">7-8</option>
+                    <option value="8-9">8-9</option>
+                    <option value="9-10">9-10</option>
+
+
+                </select>
+
+            </div>
+
+
+            <label style="font-size:15px;margin-top:20px">Qualification reqired</label>
+            <div class="input-group mt-4 ">
+                <span class="input-group-text "><i class="fa-solid fa-user" ></i></span>
+                <input type="text" class="form-control" placeholder="Qualification" name="qua" value="{{a.qua}}" required>
+            </div>
+
+
+            <button type="submit"  class="btn btn-primary mt-5 btn-5 mb-5" style="font-size:25px;margin-left:600px">update</button>
+
+
+
+
+        </form>
+    </div>
+{% include 'footer.html' %}
+
+</body>
+</html>

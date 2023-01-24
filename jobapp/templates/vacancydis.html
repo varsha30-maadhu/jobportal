@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p{
+        text-align:center;
+        color:black;
+
+        }
+        body{
+        background-color:black;
+        }
+        b{
+        color:black;
+        }
+
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container" >
+{% for i in x %}
+
+    <div class="row mt-5 bg-success">
+        {% if 'i.cname' == 'y.cname' %}
+        <div class="col-12 mt-3">
+            <p style="color:black"><b style="color:black">Company Name:</b>{{i.cname}}</p>
+            <p style="color:black"><b>Email:</b> {{i.email}}</p>
+            <p style="color:black"><b>Job Title:</b>{{i.title}}</p>
+            <p style="color:black"><b>Job Type:</b>{{i.jtype}}</p>
+            <p style="color:black"><b>Work Type:</b>{{i.worktype}}</p>
+            <p style="color:black"><b>Experience Required:</b>{{i.exp}}</p>
+            <p style="color:black"><b>Qualification Required:</b>{{i.qua}}</p>
+            <a href="http://127.0.0.1:8000/jobapp/editvacancy/{{i.id}}" class="btn btn-warning mb-5" style="margin-left:570px">EDIT</a>
+          <a href="http://127.0.0.1:8000/jobapp/deletevac/{{i.id}}" class="btn btn-danger ms-2 mb-5">DELETE</a>
+        {% endif %}
+        </div>
+    </div>
+
+
+
+{% endfor %}
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

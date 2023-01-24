@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    body{
+
+    color:white;
+    }
+        #container{
+        text-align:center;
+        background-color:black;
+        margin-bottom:300px;
+        margin-top:100px;
+        height: 500px;
+        width: 500px;
+        border-style:solid;
+        border-width: 50px;
+        border-color: rgb(189, 25, 25);
+        border-radius:1000px ;
+        margin-left:530px;
+
+
+
+
+        }
+        .h1{
+        text-align:center;
+
+
+        }
+        b{
+        color:white;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body background="https://th.bing.com/th/id/R.b615d4517a244fa10b2efaa9edfc2fbe?rik=XMwfeo5zr2rPIA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f83%2f71%2fotdApP.jpg&ehk=cxkQREBY%2bT8PdykiID3OEldAqem6JH2DJxBOgzgF9jk%3d&risl=&pid=ImgRaw&r=0">
+{% include 'navbar.html' %}
+<h1 class="h1 mt-5 " style="color:white">REGISTERED COMPANIES</h1>
+
+<div id="container">
+
+    <div class="row">
+        <h2 style="color:white;margin-top:100px;">COMPANY NAMES</h2>
+            {% for i in a %}
+        <div class="col-12">
+            <p><b>{{i.cname}}</b></p>
+
+        </div>
+           {% endfor %}
+    </div>
+
+</div>
+{% include 'footer.html' %}
+
+
+</body>
+</html>

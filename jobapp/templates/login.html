@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+	font-family: 'Roboto', sans-serif;
+	background-color: teal;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container{
+	margin: 100px;
+	background-color: white;
+	padding: 40px;
+}
+
+.container h2{
+	color: teal;
+}
+
+input[type="email"], input[type="password"]{
+
+	width: 100%;
+	box-sizing: border-box;
+	margin: 15px 0px;
+	padding: 12px 20px;
+
+}
+
+button{
+
+	margin: 15px 0px;
+	padding: 20px;
+	font-size: 18px;
+	width: 100%;
+	background-color: teal;
+	color: whitesmoke;
+	border: none;
+
+}
+    </style>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+		<div class="form">
+			<h2>Login To Your Account</h2>
+			<form method="post">{% csrf_token %}
+				<input type="email" name="email" placeholder="Email Address" />
+				<input type="password" name="password" placeholder="Password" />
+				<p>create an account  <a href="http://127.0.0.1:8000/jobapp/register/">register</a></p>
+				<button>Login</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <style>
+        body{
+        background-repeat:no-repeat;
+        background-size:100%;
+
+        }
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body background="https://th.bing.com/th/id/OIP.X2YQv3W8CWm7SSgFh9NbSAHaEX?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+{% include 'navbar2.html' %}
+<div class="carousel slide" id="c" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item">
+                    <!-- <div class="row">
+                        <div class="col-12"> -->
+                            <img src="https://th.bing.com/th/id/R.0c4d8e06bea00666bbf3190d6d786c34?rik=z3UkPSjr2K3ncA&riu=http%3a%2f%2fcityplusfm.my%2fwp-content%2fuploads%2f2020%2f06%2f0622-morning-website.jpg&ehk=czU9AhF4GJMQu8%2fbRjx7AxnTD3n99r0B3N%2b9vrUv8kM%3d&risl=&pid=ImgRaw&r=0" class="d-block" style="width: 100%;height:580px">
+                        <!-- </div>
+                    </div> -->
+                </div>
+                <div class="carousel-item active">
+                    <!-- <div class="row">
+                        <div class="col-12"> -->
+                            <img src="https://th.bing.com/th/id/OIP.P-AV9zPfoNqyZllcUGiNlgHaEN?pid=ImgDet&rs=1" class="d-block" style="width: 100%;height:580px">
+                        <!-- </div>
+                    </div> -->
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://th.bing.com/th/id/OIP.AGQzq0NkD5HliFyIbdxR6wHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block" style="width: 100%;height:580px">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#c" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+
+            </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mt-5 mb-5" style="width: 300px ;margin-left:200px">
+                <img src="{% static 'OIP (1).jpeg' %}" class="card-img-top" style="height:230px; width:100%">
+                <div class="card-body bg bg-dark">
+                    <h3 class="card-title"><h1 style="text-align:center"><a
+                            href="http://127.0.0.1:8000/jobapp/addjob/{{id}}"
+                            class="btn btn-success mt-5 btn-5" style="font-size:25px;width:250px">check status</a></h1>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card mt-5 mb-5" style="width: 300px ;margin-left:100px">
+                <img src="{% static 'OIP.jpeg' %}" class="card-img-top" style="height:230px; width:100%">
+                <div class="card-body bg bg-dark">
+                    <h3 class="card-title"><h1 style="text-align:center"><a
+                            href="http://127.0.0.1:8000/jobapp/viewpro/"
+                            class="btn btn-success mt-5 btn-5" style="font-size:25px;width:250px">viewprofile</a></h1>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+            <div class="col-md-4">
+            <div class="card mt-5" style="width: 300px ;">
+                <img src="https://th.bing.com/th/id/OIP.WACjcfKvn1CZn9iOlYSHygHaEc?pid=ImgDet&rs=1" style="height:250px">
+                <div class="card-body bg bg-dark">
+                    <h3 class="card-title"><h1 style="text-align:center"><a href="http://127.0.0.1:8000/jobapp/viewvac/" class="btn btn-success"
+                                                                            style="font-size:25px;width:250px;">View Vaccancies</a></h1>
+                    </h3>
+
+                </div>
+            </div>
+         </div>
+
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+
+</body>
+</html>
